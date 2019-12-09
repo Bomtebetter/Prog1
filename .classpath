@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="MethodLib/MethodLibrary"/>
 	<classpathentry kind="src" path="Vecka46/src"/>
 	<classpathentry kind="src" path="Arreyer"/>
+	<classpathentry kind="src" path="Läxa"/>
 	<classpathentry kind="output" path="MethodLib/bin"/>
 </classpath>
