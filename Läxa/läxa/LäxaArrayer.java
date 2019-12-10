@@ -40,7 +40,11 @@ public class LäxaArrayer {
 		}
 		return sum;
 	}
-	
+	/**
+	 * Tar in names och läser hur många namn som heter Tom. Returnerar hur en intager på hur många toms det finns
+	 * @param names
+	 * @return
+	 */
 	private static int AntalTom(String[] names) {
 		int sum = 0;
 		for (int i = 0; i < names.length; i++) {
@@ -50,6 +54,11 @@ public class LäxaArrayer {
 		}
 		return sum;
 	}
+	/**
+	 * Tar in numbers1 och läser hur många av varje siffra finns och returnerar den med flest i formen av en intager
+	 * @param numbers1
+	 * @return
+	 */
 	private static int MostNumbers(int[] numbers1) {
 		int Most = 0;
 		int Max = 0;
@@ -68,6 +77,11 @@ public class LäxaArrayer {
 		}
 		return Most;
 	}
+	/**
+	 * Tar in numbers1 och läser hur många av varje siffra finns och returnerar den med minst i formen av en intager
+	 * @param numbers1
+	 * @return
+	 */
 	private static int LeastNumbers(int[] numbers1) {
 		int Least = 0;
 		int Min = 1111111;
@@ -87,6 +101,11 @@ public class LäxaArrayer {
 		
 		return Least;
 	}
+	/**
+	 * Tar in names och letar fram Drusilla och skriver ut på vilken plats i arrayen namnet ligger på och returnerar en int med tlatsen
+	 * @param names
+	 * @return
+	 */
 	private static int PlatsDrus(String[] names) {
 		int Ant = 0;
 		int Pos = 0;
@@ -98,6 +117,11 @@ public class LäxaArrayer {
 		}
 		return Pos;
 	}
+	/**
+	 *  Läser in numbers1 tar in alla jämna tal och adderar ihop dem och returnerar en int med det värdet
+	 * @param numbers1
+	 * @return
+	 */
 	private static int SumEven(int[] numbers1) {
 		int sum = 0;
 		for (int i = 0; i < numbers1.length; i++) {
@@ -107,6 +131,11 @@ public class LäxaArrayer {
 		}
 		return sum;
 	}
+	/**
+	 * Läser av numbers1 och lägger räknar hur många det finns av varje tal
+	 * @param numbers1
+	 * @return
+	 */
 	private static String AntalTal(int[] numbers1){
 		int[] antal = new int[10];
 
@@ -116,14 +145,17 @@ public class LäxaArrayer {
                 if (numbers1[j] == i) {
 
                     antal[i]++;
-
                 }
-
             }
         }
 
         return Arrays.toString(antal);
 	}
+	/**
+	 * Läser in names och tittar vilka som börjar med L och skickar tillbaka en int med hur många namn som började med L
+	 * @param names
+	 * @return
+	 */
 	private static int BörjaL (String[] names) {
 		int a = 0;
 		for (int i = 0; i < names.length; i++) {
@@ -133,6 +165,11 @@ public class LäxaArrayer {
 		
 		return a;
 	}
+	/**
+	 * Läser in names och tittar vilka namn som är 5 bokstäver långa och skickar tillbaka en int med hur många det är
+	 * @param names
+	 * @return
+	 */
 	private static int Femlånga(String[] names) {
 		int b = 0;
 		for (int i = 0; i < names.length; i++) {
